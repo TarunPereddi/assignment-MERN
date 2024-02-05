@@ -1,4 +1,164 @@
-::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.example {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+.navbar{
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
+  width: 100vw;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.logo{
+  display: initial;
+  width: 180px;
+  margin-top: 15px;
+  font-size: xx-large;
+  font-weight: 300;
+  color: #5C5D5D;
+  margin-left: 3%;
+}
+.view1{
+  margin-left: 15%
+}
+.view2{
+  margin-left: 15%
+}
+.c21{
+  margin-top: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.seperator{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.leftsidepanel{
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.rightsidepanel{
+  margin-right: 17.5%;
+  width: 243px;
+}
+.closebtn{
+  left: 70%
+}
+
+@media screen and (max-width: 1600px) {
+  .view1{
+      margin-left: 11.25%
+  }
+  .view2{
+      margin-left: 11.25%
+  }
+  .c21{
+      margin-left: 11.25%;
+      margin-right: 11.25%
+  }
+  .seperator{
+      margin-left: 11.25%;
+      margin-right: 11.25%
+  }
+  .leftsidepanel{
+      margin-left: 11.25%
+  }
+  .rightsidepanel{
+      margin-right: 13.125%
+  }
+  .closebtn{
+      left: 75%
+  }
+}
+@media screen and (max-width: 1200px) {
+  .view1{
+      margin-left: 8%
+  }
+  .view2{
+      margin-left: 8%
+  }
+  .c21{
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+  }
+  .seperator{
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+  }
+  .leftsidepanel{
+      margin-left: 7.5%;
+  }
+  .rightsidepanel{
+      margin-right: 8.75%;
+  }
+  .closebtn{
+      left: 82%
+  }
+}
+@media screen and (max-width: 1000px) {
+  .view1{
+      margin-left: 3.75%
+  }
+  .view2{
+      margin-left: 3.75%
+  }
+  .c21{
+      margin-left: 3.75%;
+      margin-right: 3.75%;
+  }
+  .seperator{
+      margin-left: 3.75%;
+      margin-right: 3.75%;
+  }
+  .leftsidepanel{
+      margin-left: 3.75%;
+  }
+  .rightsidepanel{
+      margin-right: 4.375%;
+  }
+  .closebtn{
+      left: 88%
+  }
+  .modal-dialog {
+      max-width: 750px !important;
+    }
+}
+@media screen and (max-width: 780px) {
+  .c21{
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+  .seperator{
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+  .leftsidepanel{
+      margin-left: 0%;
+  }
+  .rightsidepanel{
+      margin-right: 0%;
+  }
 }
